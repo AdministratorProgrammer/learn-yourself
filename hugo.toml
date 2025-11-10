@@ -1,3 +1,18 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'learn-yourself.fun'
+languageCode = 'ru-ru'
+title = 'Learn Yourself'
+
+theme = "paper"
+
+# [params]
+# 	mainSections = [""]  # Разделы для главной страницы
+
+[[menu.main]]
+name = "Главная"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "О сайте"
+url = "/about/"
+weight = 2

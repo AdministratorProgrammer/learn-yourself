@@ -1,0 +1,254 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="ru-ru"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Арифметическая прогрессия - Learn Yourself</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Арифметическая прогрессия
+Арифметическая прогрессия — это числовая последовательность, в которой каждый следующий член отличается от предыдущего на одно и то же постоянное число. Это число называется разностью прогрессии.
+Основные элементы:
+
+$a_1$ — первый член прогрессии
+$d$ — разность прогрессии
+$a_n$ — $n$-й член прогрессии
+
+
+1. Формула $n$-го члена:
+Чтобы найти любой член прогрессии, используется формула:
+$$a_n = a_1 &#43; d \cdot (n - 1)$$
+где $n$ — порядковый номер члена прогрессии" />
+  <meta name="author" content="Learn Yourself" /><link rel="preload stylesheet" as="style" href="//localhost:1313/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="//localhost:1313/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="//localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script><link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+
+  
+  <link
+    rel="icon"
+    href="//localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="//localhost:1313/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.152.2">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="//localhost:1313/"
+      >Learn Yourself</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+
+    <h3
+      class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto"
+      style="padding-left: 2pc;"
+      >
+        
+          
+          
+          <h3>Math</h3>
+        
+    </h3>
+  </div>
+  
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/"
+        >Главная</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >О сайте</a
+      ></nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Арифметическая прогрессия</h1><div class="text-xs antialiased opacity-60"><time>Nov 9, 2025</time></div></header>
+
+  <section><h2 id="арифметическая-прогрессия">Арифметическая прогрессия</h2>
+<p><strong>Арифметическая прогрессия</strong> — это числовая последовательность, в которой каждый следующий член отличается от предыдущего на одно и то же постоянное число. Это число называется <strong>разностью прогрессии</strong>.</p>
+<h3 id="основные-элементы">Основные элементы:</h3>
+<ul>
+<li>$a_1$ — первый член прогрессии</li>
+<li>$d$ — разность прогрессии</li>
+<li>$a_n$ — $n$-й член прогрессии</li>
+</ul>
+<hr>
+<h3 id="1-формула-n-го-члена">1. Формула $n$-го члена:</h3>
+<p>Чтобы найти любой член прогрессии, используется формула:</p>
+<p>$$a_n = a_1 + d \cdot (n - 1)$$</p>
+<p><em>где $n$ — порядковый номер члена прогрессии</em></p>
+<hr>
+<h3 id="2-формула-суммы-первых-n-членов">2. Формула суммы первых $n$ членов:</h3>
+<p>Сумма первых $n$ членов прогрессии вычисляется по формуле:</p>
+<p>$$S_n = \frac{(a_1 + a_n) \cdot n}{2}$$</p>
+<p>Или, если подставить формулу $n$-го члена:</p>
+<p>$$S_n = \frac{(2a_1 + d \cdot (n - 1)) \cdot n}{2}$$</p>
+<hr>
+<h3 id="пример">Пример:</h3>
+<p>Дано: $a_1 = 3$, $d = 5$. Найдем первые 5 членов и сумму первых 5 членов.</p>
+<ol>
+<li>$a_1 = 3$</li>
+<li>$a_2 = 3 + 5 = 8$</li>
+<li>$a_3 = 8 + 5 = 13$</li>
+<li>$a_4 = 13 + 5 = 18$</li>
+<li>$a_5 = 18 + 5 = 23$</li>
+</ol>
+<p><strong>Прогрессия:</strong> $3,\ 8,\ 13,\ 18,\ 23,\ \ldots$</p>
+<p><strong>Сумма первых 5 членов:</strong>
+$$S_5 = \frac{(3 + 23) \cdot 5}{2} = \frac{26 \cdot 5}{2} = 65$$</p>
+<hr>
+<h3 id="характеристическое-свойство">Характеристическое свойство:</h3>
+<p>Каждый член арифметической прогрессии (начиная со второго) является средним арифметическим своих соседей:</p>
+<p>$$a_n = \frac{a_{n-1} + a_{n+1}}{2}$$</p>
+</section>
+
+  </article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="//localhost:1313/">Learn Yourself</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
